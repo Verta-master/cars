@@ -1,3 +1,32 @@
 .header {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #fff;
+}
+
+.header__wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__phone {
+  display: block;
+  margin-right: 20px;
+  font-size: 27px;
+  line-height: 1;
+  color: rgba(0,0,0,0.8);
+  .transition();
   
+  &:hover,
+  &:active {
+    color: #5CA94E;
+    .transition();
+  }
+}
+
+.header__contacts {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
