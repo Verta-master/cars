@@ -1,0 +1,40 @@
+.nav {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.nav__list {
+  .reset();
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav__item {
+  margin-left: 12px;
+  margin-right: 12px;
+  padding-left: 15px;
+  padding-right: 15px;
+  color: @green;
+  background-color: rgba(92,169,78, 0.2);
+  transform: skewX(20deg);
+  .transition();
+  
+  &:hover,
+  &:active,
+  &--active {
+    color: #fff;
+    background-color: @green;
+    .transition();
+  }
+}
+
+.nav__link {
+  display: block;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 31px;
+  transform: skewX(-20deg);
+}

@@ -1,3 +1,34 @@
 .breadcrumbs {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.breadcrumbs__link {
+  opacity: 0.8;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+a.breadcrumbs__link {
+  position: relative;
+  color: #000000;
+  margin-right: 5px;
   
+  &::after {
+    content: "/";
+    margin-left: 5px;
+  }
+  
+  &:hover,
+  &:active {
+    color: @green;
+    
+    &::after {
+      color: #000000;
+    }
+  }
+}
+
+span.breadcrumbs__link {
+  color: #808080;
 }

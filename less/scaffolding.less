@@ -58,3 +58,30 @@ button {
   cursor: pointer;
   background-color: rgba(255, 255, 255, 0);
 }
+
+h1,
+h2,
+.title {
+  position: relative;
+  margin-top: 45px;
+  margin-bottom: 12px;
+  font-family: "Gotham Pro", "Arial", sans-serif;
+  font-size: 36px;
+  line-height: 1.2;
+  font-style: italic;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.8);
+  
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 100%;
+    width: 50vw;
+    height: 4px;
+    background: #5CA94E;
+    border-radius: 2px;
+  }
+}

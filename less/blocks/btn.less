@@ -35,3 +35,15 @@
     .transition();
   }
 }
+
+.btn--green {
+  font-weight: 500;
+  color: #fff;
+  background-color: @green;
+  
+  &::after {
+    background-color: rgba(255,255,255,0.9);
+    background-image: url(../img/icons/arrow.svg);
+    background-size: 13px 12px;
+  }
+}
