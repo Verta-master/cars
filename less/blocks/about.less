@@ -1,0 +1,71 @@
+.about {
+  padding-top: 20px;
+  padding-bottom: 40px;
+  line-height: 1.8;
+  background-image: url(../img/images/bg.svg);
+  background-position: top center;
+  background-repeat: no-repeat;
+  
+  .title::before {
+    display: none;
+  }
+}
+
+.about__block {
+  float: right;
+  width: 370px;
+  margin-left: 100px;
+  margin-bottom: 100px;
+  background-color: #fff;
+  background-image: url(../img/images/car.png);
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-size: 312px 116px;
+  box-shadow: 0px 2px 16px rgba(0, 0, 0, 0.4);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.about__title {
+  margin: 0;
+  padding: 10px;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.2;
+  color: #fff;
+  text-align: center;
+  background-color: #F95454;
+  border-radius: 8px 8px 0px 0px;
+}
+
+.about__list {
+  .reset();
+  list-style: none;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  
+  li {
+    position: relative;
+    padding-left: 45px;
+    padding-right: 45px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    line-height: 1.1;
+    
+    span {
+      color: rgba(249,84,84,0.8);
+    }
+    
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 15px;
+      height: 41px;
+      background-image: url(../img/images/triangle.svg);
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+  }
+}
