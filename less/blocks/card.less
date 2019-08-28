@@ -4,10 +4,15 @@
   background-repeat: no-repeat;
   
   .title {
+    margin-top: 5px;
     font-size: 48px;
     line-height: 1.2;
     font-style: normal;
     text-transform: none;
+    
+    &::before {
+      top: 27px;
+    }
   }
 }
 
@@ -111,7 +116,7 @@
 
 .card__title {
   margin-top: 0;
-  margin-bottom: 20px;
+  margin-bottom: 12px;
   color: @green;
   font-weight: 500;
   font-size: 24px;
@@ -148,20 +153,20 @@
     border-radius: 5px;
   }
   &:last-child {
-    margin-bottom: 10px;
+    margin-bottom: 7px;
   }
 }
 
 .card__comment {
   margin-top: 0;
-  margin-bottom: 35px;
+  margin-bottom: 38px;
   font-size: 14px;
   color: #E84B4B;
   opacity: 0.9;
 }
 
 .card__title-2 {
-  margin-bottom: 25px;
+  margin-bottom: 28px;
   font-weight: 500;
   font-size: 20px;
   line-height: 23px;
@@ -179,7 +184,7 @@
 .card__number {
   margin: 0;
   position: absolute;
-  top: -20px;
+  top: -18px;
   left: 0;
   font-size: 12px;
   line-height: 14px;
@@ -255,8 +260,8 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  padding-top: 28px;
-  padding-bottom: 28px;
+  padding-top: 30px;
+  padding-bottom: 15px;
   color: @green;
   font-size: 14px;
   text-transform: uppercase;
@@ -274,6 +279,7 @@
   height: 110px;
   margin-left: 25px;
   margin-right: 25px;
+  margin-bottom: 15px;
   padding: 8px;
   background: linear-gradient(135.14deg, rgba(107,196,91,0.3) 3.48%, rgba(107, 196, 91, 0.1) 97.89%);
   border-radius: 7px;

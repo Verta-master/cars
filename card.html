@@ -190,7 +190,7 @@
       </div>
     </section>
     
-    <section class="auto">
+    <section class="auto auto--similar">
       <div class="wrapper">
         <h1 class="title">похожие автомобили</h1>
         <ul class="auto__list">
@@ -313,10 +313,15 @@
       watchSlidesProgress: true,
       breakpoints: 
 				{
-					480: 
+					766: 
 					{
             direction: 'horizontal',
 					},
+          480:
+          {
+            direction: 'horizontal',
+            slidesPerView: 2,
+          },
         }
     });
     var galleryTop = new Swiper('.gallery-top', {

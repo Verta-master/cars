@@ -23,6 +23,24 @@
   .auto__item {
     margin-right: 0;
   }
+  .card__wrap {
+    display: block;
+  }
+  .card__slider {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+  }
+  .card__info {
+    width: 430px;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .card__item {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
 }
 
 //----------------------------------------------------------
@@ -96,6 +114,56 @@
   .nav__item {
     margin-bottom: 10px;
   }
+  .about__block {
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+  }
+  .order::before {
+    transform: translateX(-50%);
+  }
+}
+
+//----------------------------------------------------------
+@media (max-width: 766px) {
+  .card__slider {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  .gallery-top {
+    width: 100%;
+    margin-right: 0;
+  }
+  .gallery-thumbs {
+    width: 100%;
+  }
+  .card__thumb {
+    height: 100px;
+  }
+  .gallery-thumbs {
+    margin-top: 20px;
+    margin-bottom: 0;
+  }
+  .card__prev {
+    left: -15px;
+    right: auto;
+    bottom: 30px;
+    top: auto;
+    transform: rotate(90deg);
+  }
+  .card__next {
+    right: -15px;
+    bottom: 30px;
+    transform: rotate(-90deg);
+  }
+  .card__slide {
+    height: auto;
+  }
+  .order::before {
+    display: none;
+  }
 }
 
 //----------------------------------------------------------
@@ -120,6 +188,8 @@
   .header {
     padding-bottom: 10px;
   }
+  .about__title,
+  .card .title,
   .order__title,
   .title,
   h1,
@@ -136,5 +206,15 @@
   .btn-top {
     width: 50px;
     height: 50px;
+  }
+  .card__info {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .about__list {
+    padding-top: 0;
+  }
+  .auto--similar {
+    margin-bottom: 0;
   }
 }
