@@ -1,0 +1,106 @@
+.card {
+  .title {
+    font-size: 48px;
+    line-height: 1.2;
+    font-style: normal;
+    text-transform: none;
+  }
+}
+
+.card__wrap {
+  margin-top: 35px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+}
+
+.card__info {
+  width: ~"calc(100% - 742px)";
+  padding: 15px 35px;
+}
+
+.card__slider {
+  width: 742px;
+  height: 490px;
+  display: flex;
+  position: relative;
+}
+
+.card__slide {
+  box-sizing: border-box;
+  
+  a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 8px;
+  }
+  
+  img {
+    display: block;
+    flex: 0 0 auto;
+  }
+}
+
+.gallery-top {
+  height: auto;
+  width: 603px;
+  margin-right: 21px;
+  box-sizing: border-box;
+}
+
+.gallery-thumbs {
+  width: 118px;
+  box-sizing: border-box;
+  margin: 37px 0;
+}
+
+.card__thumb {
+  width: 100%;
+//  height: 25% !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border: 3px solid rgba(255,255,255,0);
+  box-sizing: border-box;
+  border-radius: 2px;
+  
+  img {
+    display: block;
+    height: 100%;
+    max-width: none;
+    flex: 0 0 auto;
+  }
+}
+
+.gallery-thumbs .swiper-slide-thumb-active {
+  border-color: @green;
+}
+
+.card__next,
+.card__prev {
+  right: 45px;
+  left: auto;
+  width: 30px;
+  height: 30px;
+  margin-top: 0;
+  background-image: url(../img/icons/slider-arrow.svg);
+  background-size: 19px 13px;
+  outline: none;
+}
+
+.card__prev {
+  top: 10px;
+  transform: rotate(180deg);
+}
+
+.card__next {
+  top: auto;
+  bottom: 10px;
+}

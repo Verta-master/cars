@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="robots" content="noindex">
+  <meta  name="viewport" content="width=device-width,initial-scale=1">
+  <title>Прокат автомобилей</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500&display=swap&subset=cyrillic-ext" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.1/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body> 
+  <header class="header">
+    <div class="wrapper header__wrap">
+      <div class="logo">
+        <img src="img/images/logo.png" alt="Logo">
+        <strong>Прокат автомобилей</strong>
+      </div>
+      <form action="#" class="search">
+        <input type="text" class="search__input" placeholder="Поиск">
+        <button type="submit" class="search__btn"></button>
+      </form>
+      <div class="header__contacts">
+        <a href="tel:+79267065600" class="header__phone">8 926 706-56-00</a>
+        <a data-fancybox data-src="#call" href="javascript:;" class="btn header__btn">Заказать звонок</a>
+      </div>
+    </div>
+  </header>
+  <nav class="menu">
+    <div class="wrapper">
+      <button type="button" class="menu__btn"></button>
+      <ul class="menu__list">
+        <li class="menu__item menu__item--active">
+          <a href="#" class="menu__link">АРЕНДА</a>
+        </li>
+        <li class="menu__item">
+          <a href="#" class="menu__link">О КОМПАНИИ</a>
+        </li>
+        <li class="menu__item">
+          <a href="#" class="menu__link">УСЛОВИЯ АРЕНДЫ</a>
+        </li>
+        <li class="menu__item">
+          <a href="#" class="menu__link">ТАРИФЫ</a>
+        </li>
+        <li class="menu__item">
+          <a href="#" class="menu__link">ВАКАНСИИ</a>
+        </li>
+        <li class="menu__item">
+          <a href="#" class="menu__link">НОВОСТИ</a>
+        </li>
+        <li class="menu__item">
+          <a href="#" class="menu__link">НАШ АДРЕС</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  
+  <main>
+    <nav class="breadcrumbs" id="top">
+      <div class="wrapper">
+        <a href="#" class="breadcrumbs__link">Главная</a>
+        <a href="#" class="breadcrumbs__link">Аренда</a>
+        <span class="breadcrumbs__link">Ford Mondeo 2016</span>
+      </div>
+    </nav>
+    
+    <section class="card">
+      <div class="wrapper">
+        <h1 class="title">Ford Mondeo 2016</h1>
+        <div class="card__wrap">
+          <div class="card__slider">
+            <div class="swiper-container gallery-top">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide card__slide">
+                  <a data-fancybox="gallery" href="img/images/img-3.jpg">
+                    <img src="img/images/img-3.jpg" alt="Ford Mondeo 2016">
+                  </a>
+                </div>
+                <div class="swiper-slide card__slide">
+                  <a data-fancybox="gallery" href="img/images/img-1.jpg">
+                    <img src="img/images/img-1.jpg" alt="Ford Mondeo 2016">
+                  </a>
+                </div>
+                <div class="swiper-slide card__slide">
+                  <a data-fancybox="gallery" href="img/images/img-2.jpg">
+                    <img src="img/images/img-2.jpg" alt="Ford Mondeo 2016">
+                  </a>
+                </div>
+                <div class="swiper-slide card__slide">
+                  <a data-fancybox="gallery" href="img/images/img-4.jpg">
+                    <img src="img/images/img-4.jpg" alt="Ford Mondeo 2016">
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-container gallery-thumbs">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide card__thumb">
+                  <img src="img/images/img-3.jpg" alt="Ford Mondeo 2016">
+                </div>
+                <div class="swiper-slide card__thumb">
+                  <img src="img/images/img-1.jpg" alt="Ford Mondeo 2016">
+                </div>
+                <div class="swiper-slide card__thumb">
+                  <img src="img/images/img-2.jpg" alt="Ford Mondeo 2016">
+                </div>
+                <div class="swiper-slide card__thumb">
+                  <img src="img/images/img-4.jpg" alt="Ford Mondeo 2016">
+                </div>
+              </div>
+            </div>
+            <div class="swiper-button-prev card__prev"></div>
+            <div class="swiper-button-next card__next"></div>
+          </div>
+          
+          <div class="card__info">
+            <p class="card__title">Стоимость аренды</p>
+            <ul class="card__table">
+              <li class="card__line">
+                <p>5-15 дней</p>
+                <p>от 3500 р/с</p>
+              </li>
+              <li class="card__line">
+                <p>16-30 дней</p>
+                <p>от 3000 р/с</p>
+              </li>
+              <li class="card__line">
+                <p>31 и более дней</p>
+                <p>от 2500 р/с</p>
+              </li>
+            </ul>
+            <p class="card__comment">Залог за авто 20 000 рублей</p>
+            <p class="card__title-2">Расчитать стоимость</p>
+            <div class="card__calc">
+              <span class="card__number">Кол-во дней</span>
+              <input type="text" class="card__input" value="58">
+              <a href="#" class="card__done">Расчитать</a>
+            </div>
+            <p class="card__price">253 500 руб.</p>
+            <a href="#" class="btn btn--green card__btn">Забронировать авто</a>
+          </div>
+        </div>
+        
+        <ul class="card__list">
+          <li class="card__item card__item--01">
+            <span>Автомат</span>
+          </li>
+          <li class="card__item card__item--02">
+            <span>2.5 L</span>
+          </li>
+          <li class="card__item card__item--03">
+            <span>150 л.с.</span>
+          </li>
+          <li class="card__item card__item--04">
+            <span>10л/100км</span>
+          </li>
+          <li class="card__item card__item--05">
+            <span>аи-92</span>
+          </li>
+          <li class="card__item card__item--06">
+            <span>600 л</span>
+          </li>
+          <li class="card__item card__item--07">
+            <span>4 двери</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+    
+    <section class="about">
+      <div class="wrapper">
+        <div class="about__block">
+          <p class="about__title">Условия аренды</p>
+          <ul class="about__list">
+            <li>Залог за автомобиль:<br><span>20000 рублей.</span></li>
+            <li>Минимальный возраст -<br><span>27 года.</span></li>
+            <li>Минимальный стаж вождения -<br><span>3 года.</span></li>
+            <li>Наличие <span>паспорта и водительского удостоверения.</span></li>
+          </ul>
+        </div>
+        
+        <p class="title">Описание автомобиля</p>
+        <p>Форд Мондео последней модели имеет современный экстерьер и стильную отделку салона высококачественными материалами. Силуэт седана является нестандартным, в нем соединились спортивные и строгие черты. Такое креативное сочетание сделало этот автомобиль очень привлекательным.</p>
+        <p>Форд Мондео порадует вас отличной эргономикой, просторным салоном и массивной торпедой. Если хотите ощутить настоящий американский комфорт, то именно эта машина станет лучшим выбором для проката. Передние сиденья имеют особую конструкцию, поэтому отлично держат в поворотах. Много места предусмотрено в багажнике – в него без труда можно сложить все чемоданы и сумки с вещами, которые понадобятся в длительном путешествии семье из 3-4 человек.</p>
+        <p>Если вы хотите обеспечить себе и своим пассажирам комфортную поездку на любые расстояния, то оформляйте прокат Ford Mondeo без водителя в нашей компании прямо сейчас!</p>
+        <p>Специалисты автопроизводителя также позаботились о безопасности седана: семь подушек, уникальные по конструкции кресла, все необходимые водителю активные системы помощи. Авто по уровню безопасности лидирует среди остальных седанов в своем классе, поэтому аренда Форд Мондео без водителя будет разумным решением для семей с детьми.</p>
+        <p>Движение «железного коня» обеспечивается 2,5-литровым двигателем, который выдает 149 лошадиных сил. Его работа осуществляется в «тандеме» с 6-ступенчатым автоматом. АКПП делает четкие и своевременные переключения.</p>
+        <p>Если вы являетесь фанатом маневренности и быстрой езды, то новый Мондео подойдет вам лучше всего. Возьмите напрокат Форд и обеспечьте себе идеальную езду по городским «джунглям», отличную управляемость на больших скоростях, а также «мягкое» преодоление стыков асфальта, трамвайных рельс и лежачих полицейских</p>
+      </div>
+    </section>
+    
+    <section class="auto">
+      <div class="wrapper">
+        <h1 class="title">похожие автомобили</h1>
+        <ul class="auto__list">
+          <li class="auto__item">
+            <a href="#" class="auto__link">
+              <figure class="auto__img">
+                <img src="img/images/img-1.jpg" alt="Kia Cerato New">
+              </figure>
+              <span class="auto__price">от 2200 р/с</span>
+              <p class="auto__title">Kia Cerato New</p>
+              <span class="btn btn--green auto__btn">Посмотреть</span>
+            </a>
+          </li>
+          <li class="auto__item">
+            <a href="#" class="auto__link">
+              <figure class="auto__img">
+                <img src="img/images/img-2.jpg" alt="Kia Ceed New">
+              </figure>
+              <span class="auto__price">от 2200 р/с</span>
+              <p class="auto__title">Kia Ceed New</p>
+              <span class="btn btn--green auto__btn">Посмотреть</span>
+            </a>
+          </li>
+          <li class="auto__item">
+            <a href="#" class="auto__link">
+              <figure class="auto__img">
+                <img src="img/images/img-3.jpg" alt="Ford Mondeo 2016">
+              </figure>
+              <span class="auto__price">от 2200 р/с</span>
+              <p class="auto__title">Ford Mondeo 2016</p>
+              <span class="btn btn--green auto__btn">Посмотреть</span>
+            </a>
+          </li>
+          <li class="auto__item">
+            <a href="#" class="auto__link">
+              <figure class="auto__img">
+                <img src="img/images/img-4.jpg" alt="Kia Optima">
+              </figure>
+              <span class="auto__price">от 2200 р/с</span>
+              <p class="auto__title">Kia Optima</p>
+              <span class="btn btn--green auto__btn">Посмотреть</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    
+    <section class="order">
+      <div class="wrapper order__wrap">
+        <div class="order__info">
+          <p class="title">Кому выгодна аренда авто с выкупом?</p>
+          <p>Такая сделка будет выгодной и для физических, и для юридических лиц. И в первом, и во втором случае можно существенно сэкономить свое время на сбор документов и накопление денег для первого взноса. Аренда машин с последующим выкупом выгодна транспортным компаниям, а также частным таксистам. С первого дня можно начинать работать на машине — транспортное средство начнет приносить деньги для последующих платежей.</p>
+        </div>
+        <div class="order__block">
+          <p class="order__title">Заявка аренды авто с правом выкупа</p>
+          <form action="#" class="order__form">
+            <select class="order__select">
+              <option value="" selected disabled>Выберете автомобиль</option>
+              <option value="1">auto 1</option>
+              <option value="2">auto 2</option>
+              <option value="3">auto 3</option>
+            </select>
+            <input type="text" class="order__input" placeholder="Ваше имя">
+            <input type="tel" class="order__input" placeholder="Ваш телефон">
+            <textarea class="order__message" placeholder="Примечание..."></textarea>
+            <input type="checkbox" id="checkbox" class="order__checkbox">
+            <label for="checkbox" class="order__label">Отправляя форму, вы даете согласие на <a href="#">обработку своих персональных данных.</a></label>
+            <button type="submit" class="btn btn--yellow order__btn">Отправить заявку</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+  
+  <footer class="footer">
+    <div class="wrapper footer__wrap">
+      <div class="footer__block">
+        <p class="footer__title">адрес офиса</p>
+        <address>Московская область, г.Щёлково,<br>ул.Талсинская, д.24а</address>
+      </div>
+      <div class="footer__block">
+        <p class="footer__title">график работы</p>
+        <p>ПН-СБ с 10:00 до 20:00,<br>ВС выходной</p>
+      </div>
+      <div class="footer__block">
+        <p class="footer__title">телефоны</p>
+        <a href="tel:+79267065600" class="footer__phone">+7 (926) 706-56-00</a>
+        <a href="tel:+74997555150" class="footer__phone">+7 (499) 755-51-50</a>
+      </div>
+    </div>
+  </footer>
+  <a href="#top" class="btn-top" title="Наверх"></a>
+  
+  <!-- Modal window -->
+  <div style="display: none;" id="call" class="modal">
+    <p class="order__title">Заказать звонок</p>
+    <form action="#" class="order__form">
+      <input type="text" class="order__input" placeholder="Ваше имя">
+      <input type="tel" class="order__input" placeholder="Ваш телефон">
+      <input type="checkbox" id="checkbox2" class="order__checkbox">
+      <label for="checkbox2" class="order__label">Отправляя форму, вы даете согласие на <a href="#">обработку своих персональных данных.</a></label>
+      <button type="submit" class="btn btn--yellow order__btn">Отправить заявку</button>
+    </form>
+  </div>
+  
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="js/script.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.1/jquery.fancybox.min.js"></script>
+  
+  <script>
+    var galleryThumbs = new Swiper('.gallery-thumbs', {
+      direction: 'vertical',
+      freeMode: true,
+      slidesPerView: 4,
+      spaceBetween: 10,
+      loop: true,
+      loopedSlides: 1,
+      watchSlidesVisibility: true,
+      watchSlidesProgress: true,
+      breakpoints: 
+				{
+					480: 
+					{
+            direction: 'horizontal',
+					},
+        }
+    });
+    var galleryTop = new Swiper('.gallery-top', {
+      navigation: {
+        nextEl: '.card__next',
+        prevEl: '.card__prev',
+      },
+      thumbs: {
+        swiper: galleryThumbs,
+      },
+    });
+  </script>
+</body>
+</html>
