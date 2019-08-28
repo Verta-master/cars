@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Прокат автомобилей</title>
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,500&display=swap&subset=cyrillic-ext" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.1/jquery.fancybox.min.css">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body> 
@@ -21,7 +22,7 @@
       </form>
       <div class="header__contacts">
         <a href="tel:+79267065600" class="header__phone">8 926 706-56-00</a>
-        <a href="#" class="btn header__btn">Заказать звонок</a>
+        <a data-fancybox="" data-src="#call" href="javascript:;" class="btn header__btn">Заказать звонок</a>
       </div>
     </div>
   </header>
@@ -315,7 +316,20 @@
   </footer>
   <a href="#top" class="btn-top" title="Наверх"></a>
   
+  <!-- Modal window -->
+  <div style="display: none;" id="call" class="modal">
+    <p class="order__title">Заказать звонок</p>
+    <form action="#" class="order__form">
+      <input type="text" class="order__input" placeholder="Ваше имя">
+      <input type="tel" class="order__input" placeholder="Ваш телефон">
+      <input type="checkbox" id="checkbox2" class="order__checkbox">
+      <label for="checkbox2" class="order__label">Отправляя форму, вы даете согласие на <a href="#">обработку своих персональных данных.</a></label>
+      <button type="submit" class="btn btn--yellow order__btn">Отправить заявку</button>
+    </form>
+  </div>
+  
   <script src="js/jquery-3.2.1.min.js"></script>
   <script src="js/script.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.1/jquery.fancybox.min.js"></script>
 </body>
 </html>
