@@ -1,10 +1,24 @@
 .benefits {
+  position: relative;
   padding-top: 20px;
   padding-bottom: 155px;
   background-image: url(../img/images/bg-2.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  
+  &::after {
+    content: "";
+    position: absolute;
+    top: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1439px;
+    height: 140px;
+    background-image: url(../img/images/bg-3.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
 }
 
 .benefits__list {
@@ -13,6 +27,8 @@
   display: flex;
   justify-content: space-between;
   margin-top: 70px;
+  position: relative;
+  z-index: 2;
 }
 
 .benefits__item {
